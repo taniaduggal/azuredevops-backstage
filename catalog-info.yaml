@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: azure-backstage
+  description: An example of a Backstage application.
+  # Example for optional annotations
+  annotations:
+    dev.azure.com/project-repo: onepane/goazure
+spec:
+  type: service
