@@ -9,3 +9,4 @@ metadata:
     dev.azure.com/build-definition: sajosam.azureterraform
 spec:
   type: service
+  lifecycle: production
