@@ -59,7 +59,7 @@ import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import {
   EntityAzurePipelinesContent,
-  isAzureDevOpsAvailable,
+  isAzurePipelinesAvailable,
 } from '@backstage/plugin-azure-devops';
 
 const techdocsContent = (
@@ -93,6 +93,9 @@ const cicdContent = (
           </Button>
         }
       />
+    </EntitySwitch.Case>
+    <EntitySwitch.Case if={isAzurePipelinesAvailable}>
+      <EntityAzurePipelinesContent defaultLimit={25} />
     </EntitySwitch.Case>
   </EntitySwitch>
 );

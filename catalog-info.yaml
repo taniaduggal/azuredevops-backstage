@@ -5,6 +5,7 @@ metadata:
   description: An example of a Backstage application.
   # Example for optional annotations
   annotations:
-    dev.azure.com/project-repo: onepane/goazure
+    dev.azure.com/project: onepane
+    dev.azure.com/build-definition: sajosam.azureterraform
 spec:
   type: service
