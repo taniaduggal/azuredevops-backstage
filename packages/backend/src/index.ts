@@ -32,7 +32,6 @@ import search from './plugins/search';
 import { PluginEnvironment } from './types';
 import { ServerPermissionClient } from '@backstage/plugin-permission-node';
 import { DefaultIdentityClient } from '@backstage/plugin-auth-node';
-import { azureDevOpsPlugin } from '@backstage/plugin-azure-devops-backend';
 
 function makeCreateEnv(config: Config) {
   const root = getRootLogger();
